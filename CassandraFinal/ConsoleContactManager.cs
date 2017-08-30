@@ -12,11 +12,7 @@ namespace CassandraFinal {
 
         private const string IP_ADDRESS = "127.0.0.1";
 
-        public void Run() {
-
-        }
-
-        private ISession Connect(string node) {
+        public ISession Connect(string node) {
             return Cluster.Builder().AddContactPoint(node).Build().Connect();
         }
     }
