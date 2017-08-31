@@ -35,7 +35,7 @@ namespace CassandraFinal {
             }
         }
 
-        public static int PromptForMenuSelection(string prompt, object[] options, bool canExit, string exitMessage = "Quit") {
+        public static int PromptForMenuSelection<T>(string prompt, T[] options, bool canExit, string exitMessage = "Quit") {
             if (canExit) Console.WriteLine($"0 - {exitMessage}");
             int min = canExit ? 0 : 1;
             for (int i = 1; i <= options.Length; i++) {
