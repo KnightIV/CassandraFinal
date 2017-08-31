@@ -11,47 +11,24 @@ namespace CassandraFinal
         public string Insert(Contact c)
         {
             string query = "INSERT INTO contacts (name, phones, emails, group) VALUES('" + c.Name + "', {";
-            for (int i = 0; i < c.PhoneNumbers.Count; i++)
+
+            string nums = "";
+            foreach (int i in c.PhoneNumbers)
             {
-                if(c.PhoneNumbers.Count > 1)
-                {
-                    if (i == (c.PhoneNumbers.Count - 1))
-                    {
-
-                    query += c.PhoneNumbers[i];
-                    }
-                    else
-                    {
-                        query += c.PhoneNumbers[i] + ",";
-
-                    }
-                }
-                else
-                {
-                    query += c.PhoneNumbers[0];
-                }
+                nums += i + ",";
             }
+            nums = nums.Remove(nums.LastIndexOf(','));
+            query += nums;
+
             query += "}, {";
-            for (int i = 0; i < c.Emails.Count; i++)
+
+            string mails = "";
+            foreach (string i in c.Emails)
             {
-                if (c.Emails.Count > 1)
-                {
-                    if (i == (c.Emails.Count - 1))
-                    {
-
-                        query += c.Emails[i];
-                    }
-                    else
-                    {
-                        query += c.Emails[i] + ",";
-
-                    }
-                }
-                else
-                {
-                    query += c.Emails[0];
-                }
+                mails += i + ",";
             }
+            mails = mails.Remove(mails.LastIndexOf(','));
+            query += mails;
             query += "}); ";
             return query;
         }
