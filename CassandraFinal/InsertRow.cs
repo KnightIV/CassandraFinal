@@ -32,9 +32,25 @@ namespace CassandraFinal
                 }
             }
             query += "}, {";
-            foreach (string s in c.Emails)
+            for (int i = 0; i < c.Emails.Count; i++)
             {
-                query += "'" + s + "'";
+                if (c.Emails.Count > 1)
+                {
+                    if (i == (c.Emails.Count - 1))
+                    {
+
+                        query += c.Emails[i];
+                    }
+                    else
+                    {
+                        query += c.Emails[i] + ",";
+
+                    }
+                }
+                else
+                {
+                    query += c.Emails[0];
+                }
             }
             query += "}); ";
             return query;
