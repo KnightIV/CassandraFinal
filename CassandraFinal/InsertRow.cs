@@ -6,14 +6,30 @@ using System.Threading.Tasks;
 
 namespace CassandraFinal
 {
-    class InsertRow
+    public class InsertRow
     {
         public string Insert(Contact c)
         {
             string query = "INSERT INTO contacts (name, phones, emails, group) VALUES('" + c.Name + "', {";
-            foreach (int s in c.PhoneNumbers)
+            for (int i = 0; i < c.PhoneNumbers.Count; i++)
             {
-                query += s.ToString();
+                if(c.PhoneNumbers.Count > 1)
+                {
+                    if (i == (c.PhoneNumbers.Count - 1))
+                    {
+
+                    query += c.PhoneNumbers[i];
+                    }
+                    else
+                    {
+                        query += c.PhoneNumbers[i] + ",";
+
+                    }
+                }
+                else
+                {
+                    query += c.PhoneNumbers[0];
+                }
             }
             query += "}, {";
             foreach (string s in c.Emails)
