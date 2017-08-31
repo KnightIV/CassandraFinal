@@ -80,8 +80,11 @@
     <Compile Include="CassandraTest.cs" />
     <Compile Include="ConsoleIO.cs" />
     <Compile Include="Contact.cs" />
+    <Compile Include="CreateContacts.cs" />
+    <Compile Include="InsertRow.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="UpdateContact.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

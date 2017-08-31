@@ -20,3 +20,14 @@ C:\Users\Ramon Caballero IV\Documents\Persistance Applications\CassandraFinal\Ca
 C:\Users\Ramon Caballero IV\Documents\Persistance Applications\CassandraFinal\CassandraFinal\obj\Debug\CassandraFinal.csproj.CoreCompileInputs.cache
 C:\Users\Ramon Caballero IV\Documents\Persistance Applications\CassandraFinal\CassandraFinal\obj\Debug\CassandraFinal.exe
 C:\Users\Ramon Caballero IV\Documents\Persistance Applications\CassandraFinal\CassandraFinal\obj\Debug\CassandraFinal.pdb
+C:\Users\Elena\Documents\School\a.Persistence Applications\CassandraFinal\CassandraFinal\bin\Debug\CassandraFinal.exe.config
+C:\Users\Elena\Documents\School\a.Persistence Applications\CassandraFinal\CassandraFinal\bin\Debug\CassandraFinal.exe
+C:\Users\Elena\Documents\School\a.Persistence Applications\CassandraFinal\CassandraFinal\bin\Debug\CassandraFinal.pdb
+C:\Users\Elena\Documents\School\a.Persistence Applications\CassandraFinal\CassandraFinal\bin\Debug\Cassandra.xml
+C:\Users\Elena\Documents\School\a.Persistence Applications\CassandraFinal\CassandraFinal\bin\Debug\Microsoft.Extensions.DependencyInjection.Abstractions.xml
+C:\Users\Elena\Documents\School\a.Persistence Applications\CassandraFinal\CassandraFinal\bin\Debug\Microsoft.Extensions.Logging.xml
+C:\Users\Elena\Documents\School\a.Persistence Applications\CassandraFinal\CassandraFinal\bin\Debug\Microsoft.Extensions.Logging.Abstractions.xml
+C:\Users\Elena\Documents\School\a.Persistence Applications\CassandraFinal\CassandraFinal\obj\Debug\CassandraFinal.csprojResolveAssemblyReference.cache
+C:\Users\Elena\Documents\School\a.Persistence Applications\CassandraFinal\CassandraFinal\obj\Debug\CassandraFinal.csproj.CoreCompileInputs.cache
+C:\Users\Elena\Documents\School\a.Persistence Applications\CassandraFinal\CassandraFinal\obj\Debug\CassandraFinal.exe
+C:\Users\Elena\Documents\School\a.Persistence Applications\CassandraFinal\CassandraFinal\obj\Debug\CassandraFinal.pdb
