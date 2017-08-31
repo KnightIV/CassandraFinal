@@ -11,8 +11,8 @@ namespace CassandraFinal {
     public class Program {
 
         public static void Main(string[] args) {
-            CassandraTest test = new CassandraTest();
-            test.Run();
+            ConsoleContactManager m = new ConsoleContactManager();
+            m.Run();
         }
     }
 }

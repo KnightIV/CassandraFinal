@@ -16,7 +16,7 @@ namespace CassandraFinal {
             ISession curSession = Connect(IP_ADDRESS);
             curSession.CreateKeyspaceIfNotExists("test");
             curSession.ChangeKeyspace("test");
-            //ExecuteQuery(curSession, "CREATE TABLE contacts (id int, name text, phones set<int>, email set<text>, group text, PRIMARY KEY (group, id));");
+            ExecuteQuery(curSession, "CREATE TABLE IF NOT EXISTS contacts (id int, name text, phones set<int>, email set<text>, group text, PRIMARY KEY (group, id));");
             TableTest(curSession);
         }
 
@@ -37,9 +37,9 @@ namespace CassandraFinal {
             }
         }
 
-        private void ContactsTest(ISession session)
-        {
-            ExecuteQuery(session, "INSERT INTO testTable )
-        }
+        //private void ContactsTest(ISession session)
+        //{
+        //    ExecuteQuery(session, "INSERT INTO testTable )
+        //}
     }
 }

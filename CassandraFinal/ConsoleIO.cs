@@ -35,6 +35,20 @@ namespace CassandraFinal {
             }
         }
 
+        public static long PromptForLong(string prompt, string errorMessage, long min = long.MinValue, long max = long.MaxValue) {
+            while (true) {
+                if (!long.TryParse(PromptForInput(prompt, false), out long input)) {
+                    Console.WriteLine($"\n{errorMessage}\n");
+                    continue;
+                }
+                if (input < min || input > max) {
+                    Console.WriteLine("\nYour input was out of bounds. Try again.\n");
+                    continue;
+                }
+                return input;
+            }
+        }
+
         public static int PromptForMenuSelection<T>(string prompt, T[] options, bool canExit, string exitMessage = "Quit") {
             if (canExit) Console.WriteLine($"0 - {exitMessage}");
             int min = canExit ? 0 : 1;

@@ -25,7 +25,7 @@ namespace CassandraFinal
             string mails = "";
             foreach (string i in c.Emails)
             {
-                mails += i + ",";
+                mails += "\'" + i + "\',";
             }
             mails = mails.Remove(mails.LastIndexOf(','));
             query += mails;
